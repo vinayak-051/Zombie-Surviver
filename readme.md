@@ -30,7 +30,7 @@ This project provides a clean architecture, real-time visualization, and determi
   - Safe zone  
   - Obstacles  
   - Zombie locations  
-- Human uses **A\* pathfinding + danger cost** to avoid zombies  
+- Human uses **A\* pathfinding + danger cost** to avoid zombies . 
 - Zombies use **A\*** to chase the human  
 - **Thin black line** drawn along the shortest human path  
 - **Solvable-map guarantee** using connectivity checks  
