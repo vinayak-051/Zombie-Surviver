@@ -108,7 +108,7 @@ pip install pygame
    - Human moves first (either manual or auto).
    - Zombies recalculate paths using A* and move toward the human.
 3. **Path Visualization:** 
-   - The human’s **shortest safe path** is drawn as a thin black line.
+   - The human’s **shortest safe path** is drawn as a thin green line.
 4. **Win/Loss Conditions:**
    - **Win:** Human reaches the safe zone.
    - **Loss:** A zombie catches the human.
