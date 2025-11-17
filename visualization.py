@@ -33,7 +33,7 @@ class Visualizer:
         pygame.init()
         self.grid = grid
         self.screen = pygame.display.set_mode((grid.width * CELL, grid.height * CELL + 40))
-        pygame.display.set_caption("🧟 Zombie Survival")
+        pygame.display.set_caption("🧟 Zombie Surviver")
         self.clock = pygame.time.Clock()
         self.font = pygame.font.SysFont("consolas", 20, bold=True)
         self.big_font = pygame.font.SysFont("consolas", 40, bold=True)
@@ -122,7 +122,7 @@ class Visualizer:
 
         # --- Game Over Message (Color-coded) ---
         win_color = UI_COLORS['HUMAN_WIN'] if game.humans else UI_COLORS['ZOMBIE_WIN']
-        result = "🧍 HUMANS WIN!" if game.humans else "🧟 ZOMBIES WIN!"
+        result = " HUMANS WIN!" if game.humans else " ZOMBIES WIN!"
         label = self.big_font.render(result, True, win_color)
         
         text_x = self.grid.width * CELL // 2 - label.get_width() // 2
@@ -172,7 +172,7 @@ class Visualizer:
             info_rect = pygame.Rect(0, self.grid.height * CELL, self.grid.width * CELL, 40)
             pygame.draw.rect(self.screen, UI_COLORS['INFO_BAR'], info_rect)
             
-            result = "🧍 HUMANS WIN!" if game.humans else "🧟 ZOMBIES WIN!"
+            result = " HUMANS WIN!" if game.humans else " ZOMBIES WIN!"
             win_color = UI_COLORS['HUMAN_WIN'] if game.humans else UI_COLORS['ZOMBIE_WIN']
             label = self.font.render(result, True, win_color)
             text_x = self.grid.width*CELL//2 - label.get_width()//2
